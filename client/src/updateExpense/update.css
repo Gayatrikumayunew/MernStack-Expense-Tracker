@@ -1,27 +1,27 @@
-.addExpense{
+.UpdateExpense{
     background-color:white;
     width: 25%;
     margin: 50px auto ;
-    padding: 40px;
+    pUpdateing: 40px;
     border-radius: 5px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
 }
 
-.addExpense .inputGroup{
+.UpdateExpense .inputGroup{
 width: 100%;
 display:flex ;
 flex-direction: column;
 
 }
-.addExpense .inputGroup label{
+.UpdateExpense .inputGroup label{
     margin-top: 5px;
 
 }
-.addExpense .inputGroup input{
+.UpdateExpense .inputGroup input{
     margin-bottom: 5px;
-    padding: 10px;
+    pUpdateing: 10px;
 }
-.addExpense h3{
+.UpdateExpense h3{
     margin-top: 30px;
     text-align: center;
     font-weight: bold;
@@ -29,6 +29,6 @@ flex-direction: column;
     text-transform: uppercase;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
-.addExpense .inputGroup button{
+.UpdateExpense .inputGroup button{
     margin-top:8px ;
 }

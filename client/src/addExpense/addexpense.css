@@ -1,11 +1,19 @@
-.addExpense{
+
+
+/* .addExpense{
     background-color:rgb(158, 49, 49);
     margin: 50px auto ;
     padding: 40px;
     border-radius: 5px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+} */
+.addExpense {
+    background-color: red ;
+    width: 1500px;
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 10px;
 }
-
 .addExpense .inputGroup{
 display:flex ;
 flex-direction: column;

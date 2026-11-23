@@ -33,7 +33,7 @@ useEffect(()=>{
 const submitform=async(e)=>{
   e.preventDefault();
   await axios.put(`http://localhost:8000/api/update/expense/${id}`,expense).then((response)=>{
-    // console.log("Expense Added Successfully")
+    // console.log("Expense Updateed Successfully")
     toast.success(response.data.message,{position:"top-right"});
     
     navigate("/")
@@ -45,10 +45,10 @@ const submitform=async(e)=>{
 
 
   return (
-    <div className='addExpense'>
+    <div className='UpdateExpense'>
       <Link to="/" type='button' class="btn btn-secondary"><i class="fa-solid fa-backward-fast"> Back </i></Link>
       <h3>Update Expense</h3>
-      <form className='addExpenseForm' onSubmit={submitform}>
+      <form className='UpdateExpenseForm' onSubmit={submitform}>
 <div className='inputGroup'>
   <label htmlFor="title">Title</label>
   <input 
