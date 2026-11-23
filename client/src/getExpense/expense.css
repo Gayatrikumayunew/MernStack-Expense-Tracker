@@ -1,0 +1,70 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.head{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.head h4{
+    font-weight: 700;
+    margin-bottom: 0.5px;
+}
+.head p{
+    font-weight: 600;
+    color: rgb(73, 73, 73);
+}
+.expenseTable{
+    /* width: 60%; */
+    /* margin: 50px auto; */
+
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+}
+.expenseTable table{
+    width:100%;
+    margin-top: 30px;
+
+    
+}
+
+.expenseTable table thead th{
+    background-color:darkcyan ;
+    color: white;
+}
+.expenseTable table tbody td{
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+.actionbuttons button{
+    margin: 0 10px;
+
+}
+.nodata{
+    margin: 20px auto;
+    text-align: center;
+}
+.card1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none !important;
+    background-color:  #f1f5fb;
+    padding: 20px;
+}
+.chart-components{
+    display: flex;
+    justify-content: space-around;
+}
+                    
+.category-badge{
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}

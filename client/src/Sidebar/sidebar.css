@@ -1,0 +1,223 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 30%;
+    min-width: 250px;
+    height: 100vh;
+    background-color: #16223d;
+    position: relative;
+    transition: width 0.3s ease;
+    overflow: hidden;
+}
+
+.sidebar.closed {
+    width: 120px;
+    min-width: 70px;
+    
+}
+
+.sidebar.open {
+    width: 25%;
+}
+
+/* ---------------- Toggle Button ---------------- */
+
+.sidebar-toggle {
+    position: absolute;
+    top: 35px;
+    right: 15px;
+
+    width: 35px;
+    height: 17px;
+
+    border: none;
+    border-radius: 50px;
+
+    background: #64748b;
+    cursor: pointer;
+
+    transition: background 0.3s ease;
+}
+
+.sidebar-toggle:hover {
+    background: #475569;
+}
+
+/* Toggle ON */
+.sidebar-toggle.active {
+    background: #4f46e5;
+}
+
+/* Circle */
+.toggle-circle {
+    position: absolute;
+
+    top: 1.5px;
+    right: 22px;
+
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+    background: white;
+
+    transition: transform 0.3s ease;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* Circle move when active */
+.sidebar-toggle.active .toggle-circle {
+    transform: translateX(20px);
+}
+
+/* ---------------- Heading ---------------- */
+
+h2 {
+    color: rgb(243, 232, 232);
+    text-align: center;
+    margin-top: 25px;
+
+    font-family:
+        'Trebuchet MS',
+        'Lucida Sans Unicode',
+        'Lucida Grande',
+        Arial,
+        sans-serif;
+
+    font-weight: 700;
+    padding: 0 5px;
+
+    cursor: pointer;
+    white-space: nowrap;
+
+    transition: opacity 0.2s ease;
+}
+
+h2 i {
+    background-color: #315ee8;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+/* ---------------- Links ---------------- */
+
+.links {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    padding: 0 20px;
+    margin-top: 30px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+
+    padding: 12px 14px;
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+
+    white-space: nowrap;
+
+    transition:
+        background 0.2s ease,
+        padding 0.3s ease;
+}
+
+.links a:hover {
+    background: linear-gradient(
+        90deg,
+        #315ee8,
+        #2a395b
+    );
+}
+
+.links a i {
+    width: 22px;
+    min-width: 22px;
+    text-align: center;
+}
+
+/* Text inside links */
+.links a span {
+    margin-left: 18px;
+    transition: opacity 0.2s ease;
+}
+.sidebar-heading h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.sidebar-heading h2 i{
+    flex-shrink: 0;
+}
+.sidebar.closed .heading-text{
+    display: none;
+}
+.sidebar.closed .sidebar-heading h2{
+    justify-content: center;
+    margin-top: 25px;
+}
+.sidebar.closed .sidebar-heading h2 i {
+margin-left: 10px;
+}
+.sidebar.closed .links {
+    padding: 0 12px;
+}
+
+.sidebar.closed .links a {
+    justify-content: center;
+    padding: 12px 10px;
+}
+
+.sidebar.closed .links a span {
+    opacity: 0;
+    width: 0;
+    margin-left: 0;
+    overflow: hidden;
+}
+
+/* ---------------- Bottom Box ---------------- */
+
+.box {
+    color: rgb(243, 232, 232);
+
+    background: linear-gradient(
+        90deg,
+        #315ee8,
+        #2a395b
+    );
+
+    border-radius: 10px;
+
+    padding: 15px 20px;
+
+    margin: 150px 0 0;
+}
+
+.box i {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* Hide box when sidebar closed */
+.sidebar.closed .box {
+    opacity: 0;
+    pointer-events: none;
+}
+.sidebar-heading{
+    display: flex;
+    flex-direction: row;
+}

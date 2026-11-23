@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.cardmenu{
+    display: flex;
+width: 300px;
+min-height: 130px;
+border-radius: 15px;
+padding: 20px;
+box-sizing: border-box;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+gap: 20px;
+background-color: white;
+}
+
+.card{
+    display: flex;
+border: none;
+    gap: 15px;
+    flex-direction: row;
+}
+.icon{
+    font-size: 25px;
+}
+.card-info h5{
+    margin: 0 0 8px;
+}
+.card-info h2{
+    margin: 0;
+}
+.cardmenu{
+    display: flex;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 15px;
+}
+.card-info
+h2{
+    color: #000;
+}
+.monthchart{
+
+border-radius: 15px;
+padding: 20px;
+box-sizing: border-box;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+background-color: #fdfdfd;
+
+}
+.expensechart{
+    border-radius: 15px;
+padding: 20px;
+box-sizing: border-box;
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+background-color: #fdfdfd;
+
+}
+.expensechart h4{
+    margin-bottom: 18px;
+    font-family:Arial, Helvetica, sans-serif ;
+    font-size: 20px;
+    font-weight: 600;
+}
+.expensechart  h4 i{
+    color: #5766ef;
+    font-size: 28px;
+}
+.monthchart h4{
+   font-family:Arial, Helvetica, sans-serif ;
+    font-size: 20px;
+    font-weight: 600;
+
+
+}
+.monthchart h4 i{
+    color: #5363f1;
+background-color: #d7daf6;
+    padding: 4px 5px;
+    border-radius: 5px;
+}
